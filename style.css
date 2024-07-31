@@ -1,0 +1,139 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(https://png.pngtree.com/illustration/20220322/ourmid/pngtree-blue-404-web-design-login-page-background-illustration-image_70060.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.Next{
+    width: 40%;
+}
+
+.page{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.page-design{
+    position: relative;
+    width: 450px;
+    backdrop-filter: blur(25px);
+    border: 2px solid #C5C3C1;
+    border-radius: 15px;
+    padding: 7.5em 2.5em 4em 2.5em;
+    color: white;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
+}
+
+.page-box{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #C5C3C1;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 140px;
+    height: 70px;
+    border-radius: 0 0 20px 20px;
+}
+
+.page-box > span{
+    font-size: 30px;
+    color: black;
+}
+
+.input-area{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.input{
+    width: 100%;
+    height: 55px;
+    font-size: 16px;
+    background: transparent;
+    color: white;
+    padding-inline: 20px 50px;
+    border: 2px solid #C5C3C1;
+    outline: line;
+    border-radius: 30px;
+}
+
+.pass{
+    margin-left: 20px;
+}
+
+.user{
+    margin-left: 20px;
+}
+
+#Username{
+    background-image: url(img/user-solid-24.png);
+    background-repeat: no-repeat;
+    background-position: 320px;
+    
+}
+
+#password{
+    background-image: url(img/lock-alt-solid-24.png); 
+    background-repeat: no-repeat;
+    background-position: 320px;
+}
+
+.input:focus ~ .label,
+.input:valid ~ .label
+{
+    position: absolute;
+    top: -18px;
+    left: 25px;
+    font-size: 14px;
+}
+
+.rememberandforget{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+button{
+    width: 100%;
+    height: 40px;
+    background-color: navy;
+    color: aqua;
+    font-weight: bolder;
+    font-size: larger;
+    border-radius: 20px;
+}
+
+button:hover{
+    background-color: aqua;
+    color: navy;
+    border-color: aqua;
+}
+
